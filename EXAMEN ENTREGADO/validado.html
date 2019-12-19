@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+   <script type="text/javascript" src="examen.js"></script> 
+   <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Validado</title>
+  </head>
+  <body>
+
+<div class="contenedor">
+<!--<div style="background-color: chocolate">-->
+  <form method="GET" action="destino.php">
+        <h1> Examen LM primera Evaluacion Daw</h1>
+<div>
+        <fieldset class="izquierda"> <legend>Nombre y apellidos </legend>
+                    <input type="text" name="campo_de_texto" > <br>
+                    Nombre:<br>
+                    <input type="text" name="campo_de_texto2"> <br>
+                Apellidos:<br>
+                <input type="text" name="campo_de_texto3"> <br>
+                DNI
+        </fieldset>
+
+
+        <fieldset class="derecha">
+                <legend>Dirección</legend>
+                            <input type="text" name="campo_de_texto"> <br> 
+                            Calle Numero, Piso Puerta <br>
+                            
+                            <input type="text" name="campo_de_texto" style="width: 40%;"> 
+                            <input type="text" name="campo_de_textoMuni" style="width: 40%;"><br> 
+                            Codigo Postal &nbsp;&nbsp;&nbsp;&nbsp; Municipio <br>
+
+                        <select id="codPostal" name="codpostal" style="width: 40%;">
+                            <option value="a"  selected="selected" id="EligeCiudad"> </option>
+                            <option value="28805"  id="Madrid">28805  </option>
+                            <option value="28804" id="Alcala">28804 </option>
+                            <option value="30523" id="Meco">30523 </option>
+                        </select>
+                    <select id="pais" name="eligePais" style="width: 40%;float: right;">
+                        <option value="a"  selected="selected" id="EligePais"> </option>
+                        <option value="28805"  id="espania">España  </option>
+                        <option value="28804" id="francia">Francia </option>
+                        <option value="30523" id="usa">USA </option>
+                    </select>
+                    Provincia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pais <br>
+                
+        </fieldset>
+<!--</div>-->
+</div>
+
+<br>
+<div>
+            <fieldset class="izquierda">
+                    <legend>Correo Electrónico</legend>
+                    <input type="text" name="campo_de_texto4">  Email
+            </fieldset>
+
+
+    <fieldset class="derecha">
+            <legend>Teléfonos</legend>
+            <input type="text" name="fij" style="width: 45%"><br> Fijo 
+            <div style="float:right; width:45%"><input type="text" name="mov" style="float:right;"> <br> Movil
+            </div>
+    </fieldset>
+
+
+</div>
+
+<div>
+
+        <fieldset class="izquierda"> <legend>Turno</legend>
+        
+            <input class="elecciones" id="maniana" type="radio" name="maniana"  value="maniana"checked="checked" > <br>
+            <input class="elecciones" id="tarde" type="radio" name="maniana" value="tarde"> <br>
+            
+        
+        </fieldset>
+
+
+        <fieldset class="derecha">
+                <legend>Contraseña</legend> 
+                
+                Introduce contraseña <br>
+                <input type="password" id="contrasenia" style="width: 45%; position: relative" onchange="comp_contras();">
+
+                Repite contraseña <br>
+                <input type="password" id="repitecontra" style="width: 45%; position: relative;">
+                
+        </fieldset>
+</div>
+<div class="izquierda">
+<input type="button" value="Guardar"> 
+    <input id="borrar" name="borrar" type="reset" value="Borrar datos" >
+</div>   
+    <hr>
+        </form>
+ </div>
+
+</body>
+</html> 

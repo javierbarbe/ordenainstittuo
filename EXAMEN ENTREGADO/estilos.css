@@ -1,0 +1,33 @@
+.contenedor{
+     width: 80%;
+      background-color: red;
+     margin: auto;
+}
+body{
+    background-color:grey;
+}
+.izquierda{
+    width: 45%;
+  display:inline-block;
+  margin-left: 30px;
+}
+.derecha {
+    width: 45%;
+    display:inline-block;
+   
+}
+input {
+    border-color: blue;
+    width: 90%;
+}
+div.elecciones{
+    width: 1px;
+}
+select{ border-color:blue;}
+
+fieldset{
+    width: 45%;
+}
+input:focus{border-color: red}
+
+form div:hover{background-color: lightpink}
